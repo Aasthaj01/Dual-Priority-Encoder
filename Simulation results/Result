@@ -1,2 +1,6 @@
-
+Step for getting the output
 Return to Front Panel. Save the VI and press the Run Continuously button to check for the operation of dual-priority encoder. Give different inputs and check the outputs for identifying the first-highest and second-highest priority request.
+
+Checking the output
+DPE_simulation_result shows the result for dual-priority encoder operations for first-highest and second-highest priority requests when the inputs I7, I2 are asserted. Here, I7 has the highest priority, after that the next-highest priority will be given to I2. Hence, all the output LEDs A2, A1 and A0 glow, which is equivalent to 111 (also a binary representation of 7) in the highest-priority box. In the second-highest-priority box, only B1 is on and B2, B0 are off, which is equivalent to 010 (also a binary representation of 2). The output LEDs both AVALID and BVALID are asserted, because more than one input is asserted.
+Similarly, DPE_simulation_result_1 shows the result for dual-priority encoder operations for first-highest and second-highest priority requests when the inputs I7, I4, I3 are asserted. Here, I7 has the highest priority, after that the next-highest priority will be given to I4. Hence, all the output LEDs A2, A1 and A0 glow, which is equivalent to 111 (also a binary representation of 7) in the highest-priority box. In the second-highest-priority box, only B2 is on and B1, B0 are off, which is equivalent to 100 (also a binary representation of 4). The output LEDs both AVALID and BVALID are asserted, because more than one input is asserted.
